@@ -34,12 +34,25 @@ body {
   box-shadow: 3px 5px 1px 4px rgb(50, 47, 71);
 }
 .screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
   height:120px;
   width: 400px;
   background-color: rgb(126, 153, 141);
   border: solid 2px black;
   border-radius: 5px;
   box-shadow: inset 0px 0px 7px black;
+  padding-inline: 10px;
+}
+.screentop, .screenbot {
+  height: 55px;
+  display: flex;
+  align-items: center;
+  font-size: 2em;
+  overflow: hidden;
+  max-width: 390px;
 }
 .button-container {
   padding: 10px;
@@ -51,7 +64,7 @@ body {
   gap: 10px;
   flex-grow: 1;
 }
-.button {
+.button, .equal {
   display: flex;
   justify-content: center;
   align-items: center;
