@@ -64,7 +64,7 @@ body {
   gap: 10px;
   flex-grow: 1;
 }
-.button, .equal {
+.button, .equal, .operator {
   display: flex;
   justify-content: center;
   align-items: center;
