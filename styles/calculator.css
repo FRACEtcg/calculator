@@ -12,6 +12,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(252, 229, 198);
 }
 .container {
   display: flex;
@@ -29,9 +30,11 @@ body {
   max-width: 500px;
   height: 600px;
   background-color: rgb(55, 54, 68);
-  border: solid 1px black;
+  border: solid 1px rgb(220, 215, 215);
   border-radius: 2%;
-  box-shadow: 3px 5px 1px 4px rgb(50, 47, 71);
+  box-shadow: 1px 1px 1px 1px rgb(198, 197, 197),
+  2px 5px 1px 3px rgb(124, 121, 141),
+  2px 2px 1px 2px white;
 }
 .screen {
   display: flex;
@@ -64,7 +67,7 @@ body {
   gap: 10px;
   flex-grow: 1;
 }
-.button, .equal, .operator {
+.button, .equal, .operator, .AC {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,6 +83,15 @@ body {
   2px 2px 0px 1px rgb(2, 2, 37);
   font-weight: 900;
   font-size: 1.5em;
+}
+.operator {
+  background-color: rgb(161, 189, 203);
+}
+.equal {
+  background-color: rgb(125, 170, 125) ;
+}
+.AC {
+  background-color:  rgb(244, 177, 177);
 }
 .button:hover, .equal:hover, .operator:hover {
   background-color: rgb(210, 198, 215);

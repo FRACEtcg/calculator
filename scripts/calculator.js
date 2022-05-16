@@ -13,6 +13,13 @@ let result = ''; //new
 		appendchar(element);
 	});
 }); //buttons ready
+let clear = document.querySelector('.AC');
+clear.addEventListener('click', () => {firstoperand = '';
+secondoperand = '';
+operator = '';
+result = '';
+screenbot.textContent = '';
+screentop.textContent = '';});
 [...operators].forEach((element) => {
 	element.addEventListener('click', () => {
 		if (result === '') {
